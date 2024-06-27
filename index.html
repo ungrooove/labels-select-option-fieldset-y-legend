@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labels, select, option, fieldset y legend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <div>
+            <h2>Formulario de Contacto</h2>
+        </div>
+
+        <fieldset class="section-title">
+            <legend>Información Personal</legend>
+
+            <!--SIMPLE INPUTS-->
+            <div class="form-input">
+                <label>Nombre Completo
+                    <input type="text" placeholder="Nombre">
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Email
+                    <input type="email" placeholder="ejemplo@gmail.com">
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Nacimiento
+                    <input type="date">
+                </label>
+            </div>
+
+            <!--SELECT Y OPTION-->
+            <div class="form-input">
+                <label>Genero
+                    <select name="type-user">
+                        <option value="user1">Mujer</option>
+                        <option value="user2">Hombre</option>
+                        <option value="user3">Prefiero no decirlo</option>
+                    </select>
+                </label>
+            </div>            
+
+        </fieldset>
+        
+        <fieldset class="section-title">
+            <legend>Información Secundaria</legend>
+            <div class="form-input">
+                <label>Ubicación
+                    <select  name="type-user">
+                        <option value="armenia">Armenia</option>
+                        <option value="concha">Argentina</option>
+                        <option value="culo">Corea del Norte</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Telefono
+                    <input type="tel">
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Dirección
+                    <input type="text">
+                </label>
+            </div>
+            <div class="form-input">
+                <label>Mensaje
+                    <textarea rows="8" placeholder="Dejá tu mensaje..."></textarea>
+                </label>
+            </div>
+        
+            <div class="checkbox">
+                <label>Acepto los <a href="terms.html" target="_blank">terminos y condiciones</a>
+                    <input type="checkbox" class="checkbox">
+                </label>
+            </div>
+
+
+            <div>
+                <label>
+                    <button class="button" type="submit">Enviar</button>
+                </label>
+            </div>
+        
+        </fieldset>
+    
+    </form>
+
+
+</body>
+</html>
